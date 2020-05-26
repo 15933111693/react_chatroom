@@ -1,10 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import api from './api/index'
 
 function App() {
-  console.log(api)
   return (
     <div className="App">
       <header className="App-header">
