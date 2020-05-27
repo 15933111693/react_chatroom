@@ -6,7 +6,7 @@ const Routes = () => {
     return (
         <Router>
             {routes.map((route, index) => (
-                <Route exact path={route.path} component={route.component} />
+                <Route exact path={route.path} component={route.component} key={index}/>
             ))}
         </Router>
     );
