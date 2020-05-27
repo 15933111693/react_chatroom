@@ -7,7 +7,8 @@ function App() {
   const history = useHistory()
   const [toLogin, setToLogin] = useState('toLogin')
   useEffect(() => {
-    setTimeout(() => setToLogin('totoLogin'),1000)
+    const timeout = setTimeout(() => setToLogin('totoLogin'),1000)
+    return () => clearTimeout(timeout)
   },[])
 
   return (
