@@ -1,8 +1,15 @@
-import React from 'react';
+import React, {useState,useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useHistory } from 'react-router-dom'
 
 function App() {
+  const history = useHistory()
+  const [toLogin, setToLogin] = useState('toLogin')
+  useEffect(() => {
+    setTimeout(() => setToLogin('totoLogin'),1000)
+  },[])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -18,9 +25,12 @@ function App() {
         >
           Learn React
         </a>
+        <div onClick={() => history.push('/login')}>{toLogin}</div>
       </header>
     </div>
   );
 }
+
+
 
 export default App;
