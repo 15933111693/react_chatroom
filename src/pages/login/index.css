@@ -1,0 +1,52 @@
+.login {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.login-item {
+    font-size: 24px;
+    font-weight: 500;
+    color: #61DAFB !important; 
+}
+
+.login-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.login-filed > button {
+    width: 100%;
+}
+
+.login-filed > div, .login-filed > button {
+    margin-bottom: 2vh;
+}
+
+.login-filed, .login-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .login-logo {
+      animation: login-logo-spin infinite 20s linear;
+    }
+}
+
+@keyframes login-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

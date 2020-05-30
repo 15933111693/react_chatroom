@@ -8,7 +8,7 @@ const Routes = () => {
         <Router>
             <Provider>
                 {routes.map((route, index) => (
-                    <Route exact path={route.path} component={route.component} key={index}/>
+                    <Route exact path={route.path} component={route.component} key={index} />
                 ))}
             </Provider>
         </Router>

@@ -2,6 +2,7 @@ import React, {useState,useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { useHistory } from 'react-router-dom'
+// import {useKeepAliveEffect} from 'react-keep-alive'
 
 function App() {
   const history = useHistory()
@@ -12,7 +13,7 @@ function App() {
   },[])
 
   return (
-    <div className="App">
+    <div >
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
