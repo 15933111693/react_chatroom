@@ -8,6 +8,9 @@ const LogTextFiled = withStyles({
         '& .MuiInput-underline:before': {
             borderBottom: '1px solid #a5ecff',
         },
+        '& .MuiInput-underline:after': {
+            borderBottom: '2px solid #61DAFB',
+        },
         '& .MuiInputBase-input': {
             color: '#a5ecff'
         },
@@ -16,6 +19,9 @@ const LogTextFiled = withStyles({
         },
         '& .MuiInput-underline:hover:not(.Mui-disabled):before': {
             borderBottom: '1px solid #a5ecff'
+        },
+        '& .MuiFormLabel-root.Mui-focused': {
+            color: '#61DAFB'
         }
     },
 })(TextField)

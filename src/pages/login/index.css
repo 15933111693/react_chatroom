@@ -13,11 +13,13 @@
     font-size: 24px;
     font-weight: 500;
     color: #61DAFB !important; 
+    user-select: none;
 }
 
 .login-logo {
     height: 40vmin;
     pointer-events: none;
+    user-select: none;
 }
 
 .login-filed > button {
