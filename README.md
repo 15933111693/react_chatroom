@@ -5,7 +5,7 @@
     - react-keep-alive
     - material-ui
 
-### 如何启动它?
+# 如何启动它?
 
 首先进行安装依赖和开发依赖,之后开启服务
 
@@ -22,3 +22,4 @@ $ cd react_chatroom
 $ yarn
 $ yarn start
 ```
+
